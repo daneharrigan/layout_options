@@ -1,0 +1,39 @@
+h1. layout_options
+
+The layout_options gem provides a single place to set all of your layouts in
+your controller. This gem really shines when using inherited_resources and
+you need multiple layouts.
+
+This gem came from that exact scenario.
+
+h2. Usage
+
+To add @layout_options@ to your project just add it to your Gemfile, require it
+in your ApplicationController and define your layouts within each controller.
+
+h3. Example
+
+Adding layout_options to your Gemfile:
+
+<code>
+gem 'layout_options', '~> 0.1'
+</code>
+
+Require layout_options in your ApplicationController:
+
+<code>
+require 'layout_options' # require the gem
+
+class ApplicationController < ActionController::Base
+  # ...
+end
+</code>
+
+Define your layouts in your controllers:
+
+<code>
+class UsersController < ApplicationController
+  # define your layouts
+  layout_options :overlay => [:new, :edit], :none => :destroy
+end
+</code>
