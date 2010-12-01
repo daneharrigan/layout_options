@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "layout_options"
 
   s.add_dependency 'rails', '~> 3.0.1'
-  #s.add_dependency 'actionpack','~> 3.0.1'
 
   s.add_development_dependency "bundler", ">= 1.0.0.rc.6"
   s.add_development_dependency "rspec", "~> 2.1.0"

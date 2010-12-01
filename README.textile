@@ -14,16 +14,16 @@ h3. Example
 
 Adding layout_options to your Gemfile:
 
-  gem 'layout_options', '~> 0.1'
+   gem 'layout_options', '~> 0.1'
 
 Install @layout_options@:
 
-  rails generate layout_options:install
+   rails generate layout_options:install
 
 Define your layouts in your controllers:
 
-  class UsersController < ApplicationController
-    layout_options :overlay => [:new, :edit], :none => :destroy
-  end
+   class UsersController < ApplicationController
+     layout_options :overlay => [:new, :edit], :none => :destroy
+   end
 
 Thats it!
