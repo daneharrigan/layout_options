@@ -22,8 +22,10 @@ Install @layout_options@:
 
 Define your layouts in your controllers:
 
+<pre><code>
   class UsersController < ApplicationController
     layout_options :overlay => [:new, :edit], :none => :destroy
   end
+</code></pre>
 
 Thats it!
