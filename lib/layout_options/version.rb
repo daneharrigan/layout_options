@@ -1,7 +1,7 @@
 module LayoutOptions
   module VERSION
-    def self.to_s
-      '0.1.1'
+    def self.to_s # :nodoc:
+      '0.2'
     end
   end
 end

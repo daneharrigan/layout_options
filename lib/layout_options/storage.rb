@@ -1,12 +1,12 @@
 module LayoutOptions
   class Storage
     class << self
-      def[](key)
+      def[](key) # :nodoc:
         @storage ||= {}
         @storage[key]
       end
 
-      def []=(key, value)
+      def []=(key, value) # :nodoc:
         @storage ||= {}
         @storage[key] = value
       end

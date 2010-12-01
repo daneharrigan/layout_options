@@ -8,32 +8,22 @@ This gem came from that exact scenario.
 
 h2. Usage
 
-To add @layout_options@ to your project just add it to your Gemfile, require it
-in your ApplicationController and define your layouts within each controller.
+To add @layout_options@ to your Rails project and type 'rails generate layout_options:install'
 
 h3. Example
 
 Adding layout_options to your Gemfile:
 
-<code>
-gem 'layout_options', '~> 0.1'
-</code>
+  gem 'layout_options', '~> 0.1'
 
-Require layout_options in your ApplicationController:
+Install @layout_options@:
 
-<code>
-require 'layout_options' # require the gem
-
-class ApplicationController < ActionController::Base
-  # ...
-end
-</code>
+  rails generate layout_options:install
 
 Define your layouts in your controllers:
 
-<code>
-class UsersController < ApplicationController
-  # define your layouts
-  layout_options :overlay => [:new, :edit], :none => :destroy
-end
-</code>
+  class UsersController < ApplicationController
+    layout_options :overlay => [:new, :edit], :none => :destroy
+  end
+
+Thats it!
