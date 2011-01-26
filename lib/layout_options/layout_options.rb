@@ -8,6 +8,15 @@ module LayoutOptions
     controller.send(:layout, :layout_options_selector)
   end
 
+  # setup - This method allows you to configure the layout_options gem. You can find the setup
+  # block in the config/initializers/layout_options.rb file.
+  #
+  #  # layout_options assumes the default layout for all of your views is 'application'. If you
+  #  # want to deviate from this assumption you can set a 'default_layout' value.
+  #
+  #  LayoutOptions.setup do |config|
+  #    config.default_layout = :custom_layout
+  #  end
   def self.setup
     yield(self)
   end
