@@ -1,9 +1,17 @@
 module LayoutOptions
+  mattr_accessor :default_layout
+  @@default_layout = 'application'
+
   def self.included(controller) # :nodoc:
     controller.send(:include, LayoutOptions::InstanceMethods)
     controller.send(:extend, LayoutOptions::ClassMethods)
     controller.send(:layout, :layout_options_selector)
   end
+
+  def self.setup
+    yield(self)
+  end
+
 
   module ClassMethods
     # layout_options - This method is available at the class level of your ApplicationController
@@ -55,7 +63,7 @@ module LayoutOptions
       end
 
       no_layout.map! { |value| value.to_sym }
-      return no_layout.include?(action) ? false : 'application'
+      return no_layout.include?(action) ? false : LayoutOptions.default_layout.to_s
     end
   end
 end

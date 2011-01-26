@@ -1,7 +1,7 @@
 PATH
   remote: /Users/Dane/Projects/layout_options
   specs:
-    layout_options (0.1.1)
+    layout_options (0.2)
       rails (~> 3.0.1)
 
 GEM
