@@ -9,10 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ['dane.harrigan@gmail.com']
   s.homepage    = "http://rubygems.org/gems/layout_options"
   s.summary     = 'A single place for setting all of your layouts in a controller'
-  s.description = 'The layout_options gem provides a single place to set all of your ' <<
-  'layouts in your controller. This gem really shines when multiple layouts are needed ' <<
-  'when using inherited_resources.'
-
+  s.description = 'Need an easy way to manage multiple layouts? Done.'
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "layout_options"
 
