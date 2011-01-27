@@ -1,7 +1,3 @@
 module LayoutOptions
-  module VERSION
-    def self.to_s # :nodoc:
-      '0.2'
-    end
-  end
+  VERSION = '0.2.1'
 end
