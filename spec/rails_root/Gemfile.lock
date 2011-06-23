@@ -1,8 +1,8 @@
 PATH
-  remote: /Users/Dane/Projects/layout_options
+  remote: /Users/dharrigan/Projects/layout_options
   specs:
-    layout_options (0.2)
-      rails (~> 3.0.1)
+    layout_options (0.2.2)
+      rails (>= 3.0.1)
 
 GEM
   remote: http://rubygems.org/
@@ -93,7 +93,7 @@ PLATFORMS
 DEPENDENCIES
   inherited_resources (~> 1.1.2)
   layout_options!
-  rails (= 3.0.3)
+  rails
   rspec (~> 2.1.0)
   rspec-rails (~> 2.1.0)
   sqlite3-ruby
