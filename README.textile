@@ -30,3 +30,9 @@ Define your layouts in your controllers:
 </code></pre>
 
 Thats it!
+
+h2. Want to test it?
+
+@layout_options@ requires a rails instance so you'll need to run RSpec from within the spec/rails_root directory.
+
+Run: cd spec/rails_root && bundle exec rspec spec

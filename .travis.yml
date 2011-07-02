@@ -1,0 +1,6 @@
+rvm: 1.9.2
+script: "cd spec/rails_root && bundle exec rspec spec"
+branches:
+  only:
+    - master
+
