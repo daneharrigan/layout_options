@@ -1,4 +1,4 @@
-h1. layout_options
+h1. layout_options "!https://secure.travis-ci.org/daneharrigan/layout_options.png!":https://secure.travis-ci.org/daneharrigan/layout_options
 
 The layout_options gem provides a single place to set all of your layouts in
 your controller. This gem really shines when using inherited_resources and
